@@ -11,6 +11,19 @@
  * Versión modificada para interfaz web
  * 
 **/
+/ **
+  * CoinFlip
+  *
+  * Casino game to bet on heads or tails. The blockchain block timestamp is used
+  * to simulate a random number between 0 and 1. If the block's timestamp is an even number the
+  * user earns 190% of the money invested, if it is an odd number it loses the ethers played.
+  *
+  * When deploying the contract it is necessary to transfer funds so that you can pay the prize if
+  * the user wins.
+  *
+  * Modified version for web interface
+  *
+** /
 
 pragma solidity ^0.4.0;
 
