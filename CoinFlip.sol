@@ -75,6 +75,7 @@ contract CoinFlip {
 				
 				if (this.balance < (msg.value * ((100 + payPercentage) / 100))) {
 					// No tenemos suficientes fondos para pagar el premio, así que transferimos todo lo que tenemos
+					// We do not have enough funds to pay for the prize, so we transfer everything we have
 					msg.sender.transfer(this.balance);
 					Status('Congratulations, you win! Sorry, we didn\'t have enought money, we will deposit everything we have!', msg.sender, msg.value, true);
 					
